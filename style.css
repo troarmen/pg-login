@@ -1,6 +1,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #ccc;
 }
 
 .container {
@@ -10,25 +11,39 @@ body {
 }
 
 .destino {
+    background-color: rgb(130, 133, 133);
     border: 1px solid #ccc;
     padding: 20px;
     box-sizing: border-box;
-    /* border: 1px solid #ccc;
     margin: 20px;
-    padding: 20px;
-    width: calc(33% - 40px);
-    float: left;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15); */
+    /* width: calc(33% - 40px); */
+    /* float: left; */
+    border-radius: 20px; /* Arredonda as bordas */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+.destino:hover {
+    transform: scale(1.05); /* Aumenta o tamanho para 105% do original */
+    transition: transform 0.3s ease-in-out; /* Suaviza a transição */
 }
 
 .destino img {
     max-height: 200px; 
-    width: auto;
+    /* width: auto; */
+    width: 350px;
     display: block;
     margin-bottom: 10px;
 }
 
 .destino span {
+    color: white;
+    padding: 5px 10px;
+    background-color: #f60101;
+    border: 1px solid red;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
     float: right;
-    color: red;
+}
+.destino span:hover {
+    transform: scale(1.05); /* Aumenta o tamanho para 105% do original */
 }
